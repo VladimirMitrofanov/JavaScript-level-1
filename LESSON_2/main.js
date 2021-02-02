@@ -154,3 +154,24 @@
    				}
 		}
 
+// Задача 7 
+/*
+alert(0 == null); //значение null не равно ничему другому кроме undefined
+alert(0 == Number(null)); // а если привести к числу тогда будут равны значения
+*/
+
+// Задача 8
+
+function power(val, pow) {
+  let result = 1;
+  if (pow > 0) {
+    result = val * power(val, pow-1);
+    console.log(result);
+  }
+  return result;
+}
+
+let a = Number(prompt('Введите число'));
+let b = Number(prompt('Введите степень'));
+
+alert(power(a, b));
